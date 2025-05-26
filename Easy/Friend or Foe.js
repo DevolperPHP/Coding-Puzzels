@@ -13,9 +13,5 @@ Note: keep the original order of the names in the output
 */
 
 function friend(friends){
-  var names = []
-  var filter = friends.map(name => {
-    if(name.length == 4) names.push(name)
-  })
-  return names
+  return friends.filter(n => n.length === 4)
 }
