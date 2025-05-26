@@ -6,10 +6,6 @@ Examples (input -> output)
 5, "Hello" -> "HelloHelloHelloHelloHello"
 */
 
-function repeatStr(n, s) {
-  var result = ""
-  for(var i = 0; i < n; i++){
-    result = result.concat(s)
-  }
-  return result
+function repeatStr (n, s) {
+  return s.repeat(n);
 }
