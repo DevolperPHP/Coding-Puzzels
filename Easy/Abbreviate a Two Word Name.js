@@ -14,7 +14,7 @@ function abbrevName(name){
   var string = []
   var arr = name.split(" ")
   for(var i = 0; i < arr.length; i++){
-    string.push(arr[i].charAt(0))
+    string.push(arr[i].charAt(0).toUpperCase())
   }
   return string.join(".")
 }
